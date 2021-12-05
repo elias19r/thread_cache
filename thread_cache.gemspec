@@ -10,8 +10,17 @@ Gem::Specification.new do |s|
   s.homepage    = 'https://github.com/elias19r/thread_cache'
   s.author      = 'Elias Rodrigues'
 
-  s.files      = `git ls-files`.split("\n")
-  s.test_files = `git ls-files -- spec/*`.split("\n")
+  s.files = Dir[
+    'lib/**/*',
+    'spec/**/*',
+    '.gitignore',
+    '.rubocop.yml',
+    'Gemfile',
+    'LICENSE',
+    'README.md',
+    'thread_cache.gemspec'
+  ]
+  s.test_files = Dir['spec/**/*']
 
   s.required_ruby_version = '>= 2.5'
   s.metadata = {

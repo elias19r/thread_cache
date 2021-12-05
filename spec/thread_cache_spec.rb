@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
-require_relative '../lib/thread_cache'
+require 'thread_cache'
 
 RSpec.describe ThreadCache do
   let(:current_unix_time) { 1577880000.0 }
