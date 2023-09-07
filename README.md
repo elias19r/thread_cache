@@ -15,14 +15,14 @@ Or via `Gemfile` in your project:
 ```sh
 source 'https://rubygems.org'
 
-gem 'thread_cache', '~> 1.0'
+gem 'thread_cache', '~> 1.1'
 ```
 
 Or build and install the gem locally:
 
 ```sh
 gem build thread_cache.gemspec
-gem install thread_cache-1.0.0.gem
+gem install thread_cache-1.1.0.gem
 ```
 
 Require it in your Ruby code and the `ThreadCache` class will be available:
