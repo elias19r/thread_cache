@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative './thread_cache/version'
+require_relative 'thread_cache/version'
 
 # A simple thread-local cache store
 #
@@ -27,7 +27,7 @@ class ThreadCache
 
   # Writes a key-value pair to the data store.
   #
-  # NOTE: value is written as it is given, it does not duplicate nor serialize it.
+  # NOTE: value is written as is. It does not duplicate nor serialize it.
   #
   # key:   (String or Symbol)
   # value: (any type)

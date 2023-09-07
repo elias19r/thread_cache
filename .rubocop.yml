@@ -1,7 +1,7 @@
 require: rubocop-performance
 
 AllCops:
-  TargetRubyVersion: 2.5
+  TargetRubyVersion: 3.1
   SuggestExtensions: false
   NewCops: enable
 
@@ -25,24 +25,29 @@ Layout/HashAlignment:
 
 Naming/AccessorMethodName:
   Enabled: false
+Naming/BlockForwarding:
+  Enabled: false
 Naming/MethodParameterName:
   Enabled: false
 
+
 Style/Documentation:
   Enabled: false
-Style/WordArray:
+Style/HashSyntax:
+  EnforcedShorthandSyntax: never
+Style/IfUnlessModifier:
   Enabled: false
-Style/SymbolArray:
+Style/NegatedIf:
   Enabled: false
 Style/NumericLiterals:
   Enabled: false
 Style/StringLiterals:
   Enabled: false
+Style/SymbolArray:
+  Enabled: false
 Style/TrailingCommaInArrayLiteral:
   Enabled: false
 Style/TrailingCommaInHashLiteral:
   Enabled: false
-Style/NegatedIf:
-  Enabled: false
-Style/IfUnlessModifier:
+Style/WordArray:
   Enabled: false

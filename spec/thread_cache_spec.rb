@@ -72,7 +72,7 @@ RSpec.describe ThreadCache do
       empty_data_store
     end
 
-    it 'adds an entry and with created_at set to the current unix time' do
+    it 'adds an entry with created_at set to the current unix time' do
       described_class.new.write('some/key', 'some value')
 
       entry = find_entry('some/key')

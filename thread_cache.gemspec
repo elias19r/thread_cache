@@ -20,19 +20,10 @@ Gem::Specification.new do |s|
     'README.md',
     'thread_cache.gemspec'
   ]
-  s.test_files = Dir['spec/**/*']
 
-  s.required_ruby_version = '>= 2.5'
+  s.required_ruby_version = '>= 3.1.4'
   s.metadata = {
     'source_code_uri'       => "https://github.com/elias19r/thread_cache/tree/v#{ThreadCache::VERSION}",
     'rubygems_mfa_required' => 'true'
   }
-
-  s.add_development_dependency 'activesupport', '~> 6.1.4'
-  s.add_development_dependency 'bundler', '~> 1.17'
-  s.add_development_dependency 'pry-byebug', '~> 3.9.0'
-  s.add_development_dependency 'rspec', '~> 3.10.0'
-  s.add_development_dependency 'rubocop', '~> 1.23.0'
-  s.add_development_dependency 'rubocop-performance', '~> 1.12.0'
-  s.add_development_dependency 'simplecov', '~> 0.21.2'
 end
